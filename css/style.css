@@ -1,0 +1,96 @@
+/* css */
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 0px;
+    background-color: #ff8000;
+    color: #ffffff;
+}
+
+#home .container {
+    height: 100vh;
+    background-image: url('../img/1280px-Eruzione_Etna_13-01-2011_B.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 5px;
+}
+
+.nav_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #141313;
+}
+
+.home_header {
+    font-size: 48px;
+    font-weight: bold;
+    padding: 50px;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    background-color: #141313;
+    border-bottom: 2px solid #ff8000;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(253, 135, 0, 0.381);
+}
+
+.nav-button {
+    color: rgb(195, 85, 1);
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-button a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.nav-button:hover {
+    background-color: #ff8000;
+    color: #ffffff;
+}
+
+.nav-button.active {
+    background-color: #ff8000;
+    color: #ffffff;
+}
+
+.animated_seismo {
+    animation: seismoAnimation 1s ease-in-out infinite;
+    padding-bottom: 0px;
+}
+
+.logo {
+    width: 80px;
+    height: 70px;
+    padding: 10px;
+}
+
+.logo_container {
+    width: 150px;
+    align-items: baseline;
+}
+
+.nav_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #141313;
+}
+
+.seismo_animated_container {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    background-color: #141313;
+    padding-left: 10px;
+}
