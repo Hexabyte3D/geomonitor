@@ -21,7 +21,7 @@ body {
 .nav_container {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-end;
     background-color: #141313;
 }
 
@@ -32,9 +32,11 @@ body {
 }
 
 #navbar {
+    width: auto;
+    height: auto;
     display: flex;
     flex-direction: row;
-    align-items: baseline;
+    justify-content: left;
     background-color: #141313;
     border-bottom: 2px solid #ff8000;
     padding: 20px;
@@ -42,11 +44,18 @@ body {
 }
 
 .nav-button {
-    color: rgb(195, 85, 1);
+    color: rgb(253, 154, 77);
     text-decoration: none;
+    font-size: 16px;
+    background-color: transparent;
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 7px;
     transition: background-color 0.3s ease;
+}
+
+.active-button {
+    background-color: #ff8000cb;
+    color: #ffffff;
 }
 
 .nav-button a {
@@ -65,6 +74,7 @@ body {
 }
 
 .animated_seismo {
+    size: fit-content;
     animation: seismoAnimation 1s ease-in-out infinite;
     padding-bottom: 0px;
 }
@@ -76,21 +86,103 @@ body {
 }
 
 .logo_container {
-    width: 150px;
-    align-items: baseline;
+    width: 10%;
+    display: flex;
+    align-items: flex-end;
+    background-color: #141313;
 }
 
 .nav_container {
+    width: auto;
     display: flex;
+    align-items: flex-end;
     flex-direction: row;
-    align-items: center;
     background-color: #141313;
+    padding-right: 40px;
 }
 
 .seismo_animated_container {
+    width: 40%;
     display: flex;
     flex-direction: row;
-    align-items: baseline;
+    align-items: flex-end;
     background-color: #141313;
     padding-left: 10px;
+}
+
+/* About Geomonitor */
+.about_geomonitor_section {
+    height: 100vh;
+    background-image: url('../img/USGS_kilauea.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 5px;
+}
+
+.about_geomonitor_content {
+    max-width: 100%;
+    padding: 20px;
+}
+
+.about_text_card {
+    background-color: rgba(20, 19, 19, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    width: 40%;
+    margin-bottom: 20px;
+
+    &:hover {
+        background-color: rgba(20, 19, 19, 0.7);
+        box-shadow: 0 4px 8px rgba(253, 135, 0, 0.5);
+    }
+}
+
+.about_text_card h1 {
+    margin-top: 0;
+    color: #ff8000;
+}
+
+.about_text_card p {
+    color: #fff5e2;
+    line-height: 1.6;
+}
+
+/* Earthquakes Section */
+.earthquakes_section {
+
+    height: 100vh;
+    background-image: url('../img/Firefly_Gemini\ Flash.png');
+    background-size: cover;
+    background-position: center;
+    padding: 5px;
+}
+
+.earthquakes_content {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    padding: 20px;
+}
+
+.earthquake_text_card {
+    background-color: rgba(20, 19, 19, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    width: 40%;
+    margin-bottom: 20px;
+
+    &:hover {
+        background-color: rgba(20, 19, 19, 0.9);
+        box-shadow: 0 4px 8px rgba(253, 135, 0, 0.5);
+    }
+}
+
+.earthquake_text_card h1 {
+    margin-top: 0;
+    color: #ff8000;
+}
+
+.earthquake_text_card p {
+    color: #fff5e2;
+    line-height: 1.6;
 }
