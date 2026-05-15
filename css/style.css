@@ -31,7 +31,7 @@ body {
     padding: 50px;
 }
 
-#navbar {
+.navbar {
     width: auto;
     height: auto;
     display: flex;
@@ -93,7 +93,7 @@ body {
 }
 
 .nav_container {
-    width: auto;
+    width: 50%;
     display: flex;
     align-items: flex-end;
     flex-direction: row;
@@ -110,7 +110,12 @@ body {
     padding-left: 10px;
 }
 
-/* About Geomonitor */
+.seismo_animated_container img {
+    width: 100%;
+    height: auto;
+}
+
+/* About Geomonitor Grid is a pain in the noggin */
 .about_geomonitor_section {
     height: 100vh;
     background-image: url('../img/USGS_kilauea.jpg');
@@ -120,7 +125,9 @@ body {
 }
 
 .about_geomonitor_content {
-    max-width: 100%;
+    display: grid;
+    grid-template-columns: 48% 48%;
+    column-gap: 4%;
     padding: 20px;
 }
 
@@ -128,13 +135,28 @@ body {
     background-color: rgba(20, 19, 19, 0.5);
     padding: 20px;
     border-radius: 10px;
-    width: 40%;
     margin-bottom: 20px;
 
     &:hover {
         background-color: rgba(20, 19, 19, 0.7);
         box-shadow: 0 4px 8px rgba(253, 135, 0, 0.5);
     }
+}
+.about-grid-column-1 {
+    grid-column: 1;
+    margin-top: 20px;
+    padding-right: 5%;
+}
+.about-grid-column-2 {
+    grid-column: 2;
+    margin-top: 20px;
+}
+
+.about-grid-column-2 img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(253, 135, 0, 0.5);
 }
 
 .about_text_card h1 {
@@ -186,3 +208,4 @@ body {
     color: #fff5e2;
     line-height: 1.6;
 }
+  
