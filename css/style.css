@@ -66,6 +66,7 @@ body {
 .nav-button:hover {
     background-color: #ff8000;
     color: #ffffff;
+    height: 3.5em;
 }
 
 .nav-button.active {
@@ -208,4 +209,37 @@ body {
     color: #fff5e2;
     line-height: 1.6;
 }
-  
+.beta {
+    display: flex;
+    background-color: #141313;
+    
+}
+
+/* Beta Form (assignment) */
+.home {
+    display: grid;
+    grid-template-columns: auto;
+
+}
+.Form_Container {
+   background-color: rgba(20, 19, 19, 0.7);
+    padding: 50px;
+    border-radius: 20px;
+    width: auto;
+    margin-bottom: 20px;
+
+    &:hover {
+        background-color: rgba(20, 19, 19, 0.9);
+        box-shadow: 0 4px 8px rgba(253, 135, 0, 0.5);
+    }
+}
+
+.Apply {
+    display: inline-block;
+    width: 500px;
+    border-style: solid;
+    border-radius: 20px;
+}
+.Apply h2 {
+    font-size: larger;
+}
