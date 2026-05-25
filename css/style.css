@@ -237,7 +237,7 @@ body {
     border-color: #ff8000;
     border-width: 1px;
     border-style: solid;
-    width: 100%;
+    width: 60%;
     height: fit-content;
    
 
@@ -282,4 +282,9 @@ body {
     grid-column: 2;
     margin-top: 20px;
     padding-right: 5%;
+}
+.video-container {
+    width: 80%;
+    padding-bottom: 56.25%;
+
 }
