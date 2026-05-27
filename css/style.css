@@ -7,7 +7,7 @@ body {
     margin-right: 15px;
     margin-top: 0px;
     background-color: #ff8000;
-    color: #ffffff;
+    color: #E7E7E7;
 }
 
 #home .container {
@@ -231,7 +231,8 @@ body {
     display: grid;
     grid-template-columns: 2fr 2fr;
     background-color: rgba(247, 200, 147, 0.367);
-    padding: 10px;
+    padding: 20px;
+    margin-left: 20px;
     padding-bottom: 50px;
     border-radius: 20px;
     border-color: #ff8000;
@@ -258,17 +259,14 @@ body {
     border-style: solid;
     border-radius: 20px;
     margin-top: 20px;
+    font-size: 21px;
+    color: #000000;
 
     &:hover {
         background-color: rgba(60, 58, 58, 0.538);
         box-shadow: 0 4px 8px rgba(253, 135, 0, 0.5);
         color: #ff8000
     }
-}
-
-.Apply h2 {
-    font-size: 50px;
-    color: #ffffff;
 }
 
 .home-column-1 {
