@@ -24,7 +24,18 @@ body {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
+
     background-color: #141313;
+}
+
+.navbar {
+    display: flex;
+    justify-content: bottom;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #141313;
+    color: white;
+    position: relative;
 }
 
 .home_header {
@@ -33,47 +44,202 @@ body {
     padding: 50px;
 }
 
-.navbar {
-    width: auto;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    background-color: #141313;
-    border-bottom: 2px solid #ff8000;
-    padding: 20px;
-    box-shadow: 0 2px 4px rgba(253, 135, 0, 0.381);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.nav-button {
-    color: rgb(253, 154, 77);
+body {
+  font-family: sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #333;
+  color: white;
+  position: relative;
+}
+
+/* 1. Hide the actual input checkbox */
+.menu-toggle {
+  display: none;
+}
+
+/* 2. Style the Hamburger Icon Button */
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.hamburger .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out; /* Smooth transition animations */
+}
+
+/* 3. Style the Navigation Links List */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+/* 4. Responsive Mobile Layout adjustments */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background-color: #333;
+    width: 100%;
+    text-align: center;
+    padding: 2rem 0;
+    
+    /* Hide menu off-screen by default */
+    transform: translateY(-150%);
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+    pointer-events: none;
+  }
+
+  .nav-links li {
+    margin: 1rem 0;
+  }
+
+  /* 5. THE HACK: Trigger changes when checkbox is checked */
+  
+  /* Slide and fade the menu into view */
+  .menu-toggle:checked ~ .nav-links {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  /* Animate hamburger bars into an 'X' close button */
+  .menu-toggle:checked ~ .hamburger .bar:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+  }
+
+  .menu-toggle:checked ~ .hamburger .bar:nth-child(2) {
+    opacity: 0; /* Hide middle line */
+  }
+
+  .menu-toggle:checked ~ .hamburger .bar:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+  }
+}
+
+/* I gues this hides the hamburger - setting it up to hide when screen is 1920px wide
+.menu_hack {
+    display: none;
+}
+
+.nav_items {}
+
+.burgers .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.nav_container {
+    width: 50%;
+    display: flex;
+    align-items: flex-end;
+    margin-top: -30px;
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    background-color: #141313;
+    padding-right: 40px;
+}
+
+@media screen and (max-width: 1799px) {
+    .burgers {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 30px;
+        height: 21px;
+        cursor: pointer;
+        z-index: 10;
+    }
+
+    .nav_container {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0px;
+        width: 100%;
+        background-color: #fea500;
+
+        .menu_hack:checked~.nav_container {
+            display: flex;
+        }
+
+
+
+    }
+}
+
+ */
+
+
+
+.button {
+    color: #E7E7E7;
     text-decoration: none;
     font-size: 16px;
     background-color: transparent;
-    padding: 10px 20px;
+    padding: 10px 13px;
     border-radius: 7px;
     transition: background-color 0.3s ease;
 }
 
+.button a {
+    text-decoration: none;
+    color: #E7E7E7;
+    padding: 15px 15px;
+    cursor: pointer;
+}
+
 .active-button {
     background-color: #ff8000cb;
-    color: #ffffff;
+    color: #E7E7E7;
 }
 
-.nav-button a {
-    color: inherit;
-    text-decoration: none;
-}
-
-.nav-button:hover {
+.button:hover {
     background-color: #ff8000;
-    color: #ffffff;
-    height: 3.5em;
+    color: #485696;
+    padding: 11px 20px;
 }
 
-.nav-button.active {
+.button.active {
     background-color: #ff8000;
-    color: #ffffff;
+    color: #E7E7E7;
 }
 
 .animated_seismo {
@@ -95,14 +261,7 @@ body {
     background-color: #141313;
 }
 
-.nav_container {
-    width: 50%;
-    display: flex;
-    align-items: flex-end;
-    flex-direction: row;
-    background-color: #141313;
-    padding-right: 40px;
-}
+
 
 .seismo_animated_container {
     width: 40%;
@@ -170,7 +329,7 @@ body {
 }
 
 .about_text_card p {
-    color: #fff5e2;
+    color: #E7E7E7;
     line-height: 1.6;
 }
 
@@ -210,7 +369,7 @@ body {
 }
 
 .earthquake_text_card p {
-    color: #fff5e2;
+    color: #E7E7E7;
     line-height: 1.6;
 }
 

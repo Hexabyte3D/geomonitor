@@ -9,24 +9,30 @@
 </head>
 
 <body>
-    <section class="navbar">
+    <nav class="navbar">
         <div class="logo_container">
-            <img class="logo" src="./img/logo6@0.5x.png" alt="Logo Geomonitor">
+            <img class="logo" url=(./index.html) src="./img/logo6@0.5x.png" alt="Logo Geomonitor">
         </div>
-        <div class="nav_container">
-            <nav>
-                <button type="button" class="nav-button active-button"><a href="./index.html">Home</a></button>
-                <button type="button" class="nav-button"><a href="./html/S_earthquakes.html">Earthquakes</a></button>
-                <button type="button" class="nav-button"><a href="./html/s_volcanoes.html">Volcanoes</a></button>
-                <button type="button" class="nav-button"><a href="./html/s_predictions.html">Predictions</a></button>
-                <button type="button" class="nav-button"><a href="./html/about_geomonitor.html">About
-                        Geomonitor</a></button>
-            </nav>
-        </div>
+        <input type="checkbox" id="tog_menu" class="menu_hack">
+        <label for="tog_menu" class="burgers">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </label>
+        
+        <ul class="nav_items nav_container">
+            <li class="button active-button"><a href="./index.html">Home</a></;<i></i>>
+            <li class="button"><a href="./html/S_earthquakes.html">Earthquakes</a></li>
+            <li class="button"><a href="./html/s_volcanoes.html">Volcanoes</a></li>
+            <li class="button"><a href="./html/s_predictions.html">Predictions</a></li>
+            <li class="button"><a href="./html/about_geomonitor.html">About
+                    Geomonitor</a></li>
+            </ul>
+
         <div class="seismo_animated_container">
             <img class="animated_seismo" src="./img/seismogram3.jpg" alt="seismogram animated - grok" class="nav-image">
         </div>
-    </section>
+    </nav>
     <section id="home">
         <main class="container">
             <div class="home-column-1">
@@ -34,7 +40,7 @@
                 <p>The Geomonitor teams is proud to announce a release date of Beta release date of June 18th, 2026</p>
                 <br>
                 <br>
-                <button type="button" class="nav-button"><a href="./beta.html">Form Assignment</a></button>
+                <button type="button" class="button"><a href="./beta.html">Form Assignment</a></button>
             </div>
         </main>
     </section>
