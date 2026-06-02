@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: #fff1d7;
 }
 
 /* Global Styles */
@@ -12,9 +13,11 @@ body {
     margin-right: 15px;
     margin-top: 0px;
     background-color: #ff8000;
-    color: #E7E7E7;
+    color: #ffc47b7c;
     font-family: sans-serif;
+
 }
+
 
 #home .container {
     display: grid;
@@ -285,14 +288,7 @@ li a {
     height: auto;
 }
 
-/* About Geomonitor Grid is a pain in the noggin */
-.about_geomonitor_section {
-    height: 100vh;
-    background-image: url('../img/USGS_kilauea.jpg');
-    background-size: cover;
-    background-position: center;
-    padding: 5px;
-}
+
 
 .about_geomonitor_content {
     display: grid;
