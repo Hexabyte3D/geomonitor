@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #141313;
+}
+
+
+.header {
+    height: 80px;
+    background-color: #141313;
+    border-bottom: 1px solid #333;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-inner {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo_container {
+    display: fixed;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+
+    width: 60px;
+    height: auto;
+}
+
+.logo {
+width: 100%;
+height: auto; 
+}
+
+
+
+.burgers {
+    display: block;
+    width: 24px;
+    display: block;
+    padding-top: 120px;
+    cursor: pointer;
+}
+
+.bar {
+    width: 100%;
+    display: block;
+    height: 2px;
+    border-radius: 10px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+.bar + .bar {
+    margin-top: 4px;
+}
+
+.nav_items {
+    display: block;
+    position: absolute;
+    background: #141313;
+    top: 130px;
+    left: -10000px;
+    opacity: 0;
+    transition: left 0.3s ease, opacity 0.3s ease;
+    width: 100%;
+}
+
+#tog_menu:checked~.nav_items {
+    left: 0;
+    opacity: 1;
+}
+
+.nav_items a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: block;
+   
+}
+
+.nav_items li {
+    list-style: none;
+    padding: 10px 20px;
+    border: 1px solid #333;
+}
+
+.nav_items li:hover{
+    color: #000000;
+    background-color: #fea500;
+    transition: color 0.5s ease;
+}   
+
+/* turn that checkbox invisible */
+#tog_menu{
+    display: none;
+}
+
+/* hide ugly sytling */
+li  {
+    list-style: none;
+}   
+
+/* remove that default link styling */
+li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}   
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #141313;
+    color: white;
+    position: relative;
+}
+
+
+@media (min-width: 800px) {
+    .burgers {
+        display: none;
+    }
+    .nav_items {
+        display: flex;
+        position: static;
+        opacity: 1;
+        flex-direction: row;
+        background: none;
+        width: auto;    
+    }
+}
+/* -----------------------------  */

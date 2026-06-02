@@ -9,38 +9,74 @@
 </head>
 
 <body>
-    <nav class="navbar">
-        <div class="logo_container">
-            <img class="logo" url=(./index.html) src="./img/logo6@0.5x.png" alt="Logo Geomonitor">
-        </div>
+
+    <section class="topbar">
         <input type="checkbox" id="tog_menu" class="menu_hack">
-        <label for="tog_menu" class="burgers">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </label>
-        
-        <ul class="nav_items nav_container">
-            <li class="button active-button"><a href="./index.html">Home</a></;<i></i>>
-            <li class="button"><a href="./html/S_earthquakes.html">Earthquakes</a></li>
+        <header class="header">
+            <div class="inner-header">
+                <div class="logo_container">
+                    <img class="logo" src="./img/logoupdated@0.5x.png" alt="Geomonitor Logo">
+                </div>
+                <label class="burgers" for="tog_menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </label>
+        </header>
+
+
+        <ul class="nav_items">
+            <li class="button active_button"><a href="index.html">Home</a></li>
+            <li class="button"><a href="./html/s_earthquakes.html">Earthquakes</a></li>
             <li class="button"><a href="./html/s_volcanoes.html">Volcanoes</a></li>
             <li class="button"><a href="./html/s_predictions.html">Predictions</a></li>
-            <li class="button"><a href="./html/about_geomonitor.html">About
-                    Geomonitor</a></li>
-            </ul>
+            <li class="button"><a href="./html/about_geomonitor.html">About Geomonitor</a></li>
+            <div class="seismo_animated_container">
+                <img class="animated_seismo" src="./img/seismogram3.jpg" alt="seismogram animated - grok"
+                    class="nav-image">
+            </div>
+        </ul>
 
-        <div class="seismo_animated_container">
-            <img class="animated_seismo" src="./img/seismogram3.jpg" alt="seismogram animated - grok" class="nav-image">
-        </div>
-    </nav>
+
+    </section>
     <section id="home">
         <main class="container">
             <div class="home-column-1">
                 <h1 class="home_header">Geomonitor</h1>
+                <br>
                 <p>The Geomonitor teams is proud to announce a release date of Beta release date of June 18th, 2026</p>
                 <br>
+                <p>Geomonitor is a professional software designed to provide real-time monitoring and information about
+                    geological
+                    events such as earthquakes and volcanoes. The application aims to offer users an intuitive interface
+                    to
+                    access data, visualizations, and predictions related to seismic and volcanic activities. Geomonitor
+                    provides a comprehensive platform for researchers, emergency responders, and the general public to
+                    stay informed about geological events and their potential impacts. It incorporates advanced machine
+                    learning
+                    algorithms to analyze and interpret geological data to generate probabilistic forecasts with
+                    confidence intervals.</p>
                 <br>
+                <p>Our mission is to enhance public awareness and understanding of geological phenomena, helping
+                    individuals
+                    stay informed about potential hazards and fostering a greater appreciation for the dynamic nature of
+                    our
+                    planet.</p>
+                <br>
+                <div class="apple-plug">
+                <img src="./img/StockCake-Iconic_Apple_Logo-912580-medium.jpg" alt="Geomonitor Example"
+                    class="home-image">
+                    <h4>Geomonitor will be available on MacOS and iOS platforms via the App Store. Stay tuned for updates
+                    and announcements regarding the release of Geomonitor on these platforms.</h4>
+                </div>
+                <br>
+                <br>
+                <br>
+
                 <button type="button" class="button"><a href="./beta.html">Form Assignment</a></button>
+            </div>
+            <div class="home-column-2">
+                <img src="./img/Geomonitor1.png" alt="Geomonitor Example" class="home-image">
             </div>
         </main>
     </section>

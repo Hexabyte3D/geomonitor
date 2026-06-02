@@ -1,4 +1,9 @@
 /* css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 /* Global Styles */
 body {
@@ -8,6 +13,7 @@ body {
     margin-top: 0px;
     background-color: #ff8000;
     color: #E7E7E7;
+    font-family: sans-serif;
 }
 
 #home .container {
@@ -15,22 +21,159 @@ body {
     grid-template-columns: 2fr 2fr;
     height: 100vh;
     background-image: url('../img/1280px-Eruzione_Etna_13-01-2011_B.jpg');
-    background-size: cover;
+    background-attachment: fixed;
     background-position: center;
-    padding: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
 }
 
-.nav_container {
+.earthquakes_section {
+    height: 100vh;
+    background-image: url('../img/Firefly_Gemini\ Flash.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 50px;
+}
+
+.about_geomonitor_section {
+    height: 100vh;
+    background-image: url('../img/USGS_kilauea.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 50px;
+}
+
+.volcanoes_section {
+    height: 100vh;
+    background-image: url('../img/USGS_kilauea.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 50px;
+}
+
+.header {
+    height: 80px;
+    background-color: #141313;
+    border-bottom: 1px solid #333;
+    display: flex;
+    align-items: center;
+
+    max-width: 100%;
+}
+
+.header-inner {
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    max-width: 1500px;
+}
 
-    background-color: #141313;
+.logo_container {
+    display: fixed;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+
+    width: 60px;
+    height: auto;
+}
+
+.logo {
+    width: 100%;
+    height: auto;
+}
+
+
+
+.burgers {
+    display: block;
+    width: 24px;
+    display: block;
+    padding-top: 120px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.bar {
+    width: 100%;
+    display: block;
+    height: 2px;
+    border-radius: 10px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+.bar+.bar {
+    margin-top: 4px;
+}
+
+.nav_items {
+    display: block;
+    position: absolute;
+    background: #141313;
+    top: 130px;
+    left: -10000px;
+    opacity: 0;
+    transition: left 0.3s ease, opacity 0.3s ease;
+    width: 100%;
+}
+
+#tog_menu:checked~.nav_items {
+    left: 15px;
+    margin-right: 15px;
+    opacity: 1;
+}
+
+.nav_items a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: block;
+
+}
+
+.nav_items li {
+    list-style: none;
+    padding: 10px 20px;
+    border: 1px solid #333;
+}
+
+.nav_items li:hover {
+    color: #000000;
+    background-color: #ff8000cb;
+    transition: color 0.5s ease;
+}
+
+/* turn that checkbox invisible */
+#tog_menu {
+    display: none;
+}
+
+/* hide ugly sytling */
+li {
+    list-style: none;
+}
+
+/* remove that default link styling */
+li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
 }
 
 .navbar {
     display: flex;
-    justify-content: bottom;
+    justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
     background-color: #141313;
@@ -38,175 +181,27 @@ body {
     position: relative;
 }
 
-.home_header {
-    font-size: 48px;
-    font-weight: bold;
-    padding: 50px;
+
+@media (min-width: 1500px) {
+    .burgers {
+        display: none;
+    }
+
+    .nav_items {
+        display: flex;
+        color: #E7E7E7;
+        text-decoration: none;
+        font-size: 1.2rem;
+        position: static;
+        opacity: 1;
+    }
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: sans-serif;
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  background-color: #333;
-  color: white;
-  position: relative;
-}
-
-/* 1. Hide the actual input checkbox */
-.menu-toggle {
-  display: none;
-}
-
-/* 2. Style the Hamburger Icon Button */
-.hamburger {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 30px;
-  height: 21px;
-  cursor: pointer;
-  z-index: 10;
-}
-
-.hamburger .bar {
-  height: 3px;
-  width: 100%;
-  background-color: white;
-  border-radius: 10px;
-  transition: all 0.3s ease-in-out; /* Smooth transition animations */
-}
-
-/* 3. Style the Navigation Links List */
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
-}
-
-.nav-links a {
-  color: white;
-  text-decoration: none;
-  font-size: 1.1rem;
-}
-
-/* 4. Responsive Mobile Layout adjustments */
-@media (max-width: 768px) {
-  .nav-links {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    flex-direction: column;
-    background-color: #333;
-    width: 100%;
-    text-align: center;
-    padding: 2rem 0;
-    
-    /* Hide menu off-screen by default */
-    transform: translateY(-150%);
-    opacity: 0;
-    transition: all 0.4s ease-in-out;
-    pointer-events: none;
-  }
-
-  .nav-links li {
-    margin: 1rem 0;
-  }
-
-  /* 5. THE HACK: Trigger changes when checkbox is checked */
-  
-  /* Slide and fade the menu into view */
-  .menu-toggle:checked ~ .nav-links {
-    transform: translateY(0);
-    opacity: 1;
-    pointer-events: auto;
-  }
-
-  /* Animate hamburger bars into an 'X' close button */
-  .menu-toggle:checked ~ .hamburger .bar:nth-child(1) {
-    transform: translateY(9px) rotate(45deg);
-  }
-
-  .menu-toggle:checked ~ .hamburger .bar:nth-child(2) {
-    opacity: 0; /* Hide middle line */
-  }
-
-  .menu-toggle:checked ~ .hamburger .bar:nth-child(3) {
-    transform: translateY(-9px) rotate(-45deg);
-  }
-}
+/* -----------------------------  */
 
 /* I gues this hides the hamburger - setting it up to hide when screen is 1920px wide
-.menu_hack {
-    display: none;
-}
 
-.nav_items {}
-
-.burgers .bar {
-    height: 3px;
-    width: 100%;
-    background-color: #ffffff;
-    border-radius: 10px;
-    transition: all 0.3s ease-in-out;
-}
-
-
-.nav_container {
-    width: 50%;
-    display: flex;
-    align-items: flex-end;
-    margin-top: -30px;
-    list-style: none;
-    display: flex;
-    gap: 1.5rem;
-    background-color: #141313;
-    padding-right: 40px;
-}
-
-@media screen and (max-width: 1799px) {
-    .burgers {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        width: 30px;
-        height: 21px;
-        cursor: pointer;
-        z-index: 10;
-    }
-
-    .nav_container {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        left: 0px;
-        width: 100%;
-        background-color: #fea500;
-
-        .menu_hack:checked~.nav_container {
-            display: flex;
-        }
-
-
-
-    }
-}
-
- */
-
+*/
 
 
 .button {
@@ -215,6 +210,7 @@ body {
     font-size: 16px;
     background-color: transparent;
     padding: 10px 13px;
+    border: 1px solid #333;
     border-radius: 7px;
     transition: background-color 0.3s ease;
 }
@@ -265,11 +261,13 @@ body {
 
 .seismo_animated_container {
     width: 40%;
+    height: auto;
     display: flex;
-    flex-direction: row;
-    align-items: flex-end;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.8;
     background-color: #141313;
-    padding-left: 10px;
+    padding-left: 20px;
 }
 
 .seismo_animated_container img {
@@ -334,14 +332,6 @@ body {
 }
 
 /* Earthquakes Section */
-.earthquakes_section {
-
-    height: 100vh;
-    background-image: url('../img/Firefly_Gemini\ Flash.png');
-    background-size: cover;
-    background-position: center;
-    padding: 5px;
-}
 
 .earthquakes_content {
     display: flex;
@@ -373,11 +363,24 @@ body {
     line-height: 1.6;
 }
 
+.volcanoes_content {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    padding: 20px;
+}
+
+
+
+
+
+
 .beta {
     display: flex;
     background-color: #141313;
 
 }
+
 
 /* Beta Form (assignment) */
 .home {
@@ -428,17 +431,56 @@ body {
     }
 }
 
+
 .home-column-1 {
     grid-column: 1;
-    margin-top: 20px;
+    margin-top: 50px;
     padding-right: 5%;
     padding-left: 5%;
 }
 
 .home-column-2 {
     grid-column: 2;
-    margin-top: 20px;
+    margin-top: 50px;
     padding-right: 5%;
+}
+
+.home-column-1 h1 {
+    color: #ff8000;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.home-column-1 p {
+    color: #E7E7E7;
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+.home-column-1 img {
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(253, 135, 0, 0.5);
+}
+
+.home-column-2 img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(253, 135, 0, 0.5);
+}
+
+.apple-plug {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(253, 135, 0, 0.5);
 }
 
 /* Video embed assignment */

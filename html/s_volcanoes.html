@@ -1,29 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Volcanoes</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
-    <section class="navbar">
-        <div class="logo_container">
-            <img class="logo" src="../img/Logo6@0.5x.png" alt="Logo Geomonitor">
-        </div>
-        <div class="nav_container">
-            <nav>
-                <button type="button" class="button"><a href="../index.html">Home</a></button>
-                <button type="button" class="button"><a href="./S_earthquakes.html">Earthquakes</a></button>
-                <button type="button" class="button active-button"><a href="./s_volcanoes.html">Volcanoes</a></button>
-                <button type="button" class="button"><a href="s_predictions.html">Predictions</a></button>
-                <button type="button" class="button"><a href="./about_geomonitor.html">About
-                        Geomonitor</a></button>
-            </nav>
-        </div>
-        <div class="seismo_animated_container">
-            <img class="animated_seismo" src="../img/seismogram3.jpg" alt="seismogram animated - grok" class="nav-image">
+    <section class="topbar">
+        <input type="checkbox" id="tog_menu" class="menu_hack">
+        <header class="header">
+            <div class="inner-header">
+                <div class="logo_container">
+                    <img class="logo" src="../img/logoupdated@0.5x.png" alt="Geomonitor Logo">
+                </div>
+                <label class="burgers" for="tog_menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </label>
+        </header>
+
+
+        <ul class="nav_items">
+            <li class="button"><a href="../index.html">Home</a></li>
+            <li class="button"><a href="./s_earthquakes.html">Earthquakes</a></li>
+            <li class="button active-button"><a href="./s_volcanoes.html">Volcanoes</a></li>
+            <li class="button"><a href="./s_predictions.html">Predictions</a></li>
+            <li class="button"><a href="./about_geomonitor.html">About Geomonitor</a></li>
+            <div class="seismo_animated_container">
+                <img class="animated_seismo" src="../img/seismogram3.jpg" alt="seismogram animated - grok"
+                    class="nav-image">
+            </div>
+        </ul>
+    </section>
+    <section class="volcanoes_section">
+        <div class="volcanoes_content">
+            <div class="volcano_text_card">
+                <h1>Volcanoes</h1>
+                <p>Volcanoes are geological formations that allow molten rock, gases, and ash to escape from beneath the
+                    Earth's surface. They are typically found at tectonic plate boundaries or hotspots, where geological
+                    activity is high.</p>
+                <p>Monitoring volcanic activity is essential for predicting eruptions and ensuring the safety of nearby
+                    populations. Geomonitor provides real-time data and visualizations to help users stay informed about
+                    volcanic activity around the world.</p>
+            </div>
+
+            <div class="volcano_text_card">
+                <h1>Why Should We Monitor Volcanoes?</h1>
+                <p>Monitoring volcanoes is essential for predicting eruptions and ensuring the safety of nearby
+                    populations. Geomonitor provides real-time data and visualizations to help users stay informed about
+                    volcanic activity around the world.</p>
+            </div>
+
         </div>
     </section>
 </body>
+
 </html>
