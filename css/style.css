@@ -58,6 +58,16 @@ body {
     padding-top: 50px;
 }
 
+.predictions_section {
+    height: 100vh;
+     background-image: url('../img/Firefly_Gemini\ Flash.png');
+     background-attachment: fixed;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     padding-top: 50px;
+}
+
 .header {
     height: 80px;
     background-color: #141313;
