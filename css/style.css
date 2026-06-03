@@ -13,7 +13,7 @@ body {
     margin-right: 15px;
     margin-top: 0px;
     background-color: #ff8000;
-    color: #ffc47b7c;
+    color: #ffe6c7;
     font-family: sans-serif;
 
 }
@@ -143,12 +143,13 @@ body {
 
 #tog_menu:checked~.nav_items {
     left: 15px;
+    width: calc(100% - 30px);
     margin-right: 15px;
     opacity: 1;
 }
 
 .nav_items a {
-    color: white;
+    color: #ffe6c7;
     text-decoration: none;
     font-size: 1.2rem;
     display: block;
@@ -180,7 +181,7 @@ li {
 /* remove that default link styling */
 li a {
     text-decoration: none;
-    color: white;
+    color: #ffe6c7;
     font-size: 1.2rem;
 }
 
@@ -190,7 +191,7 @@ li a {
     align-items: center;
     padding: 1rem 2rem;
     background-color: #141313;
-    color: white;
+    color: #ffe6c7;
     position: relative;
 }
 
@@ -202,7 +203,7 @@ li a {
 
     .nav_items {
         display: flex;
-        color: #E7E7E7;
+        color: #ffe6c7;
         text-decoration: none;
         font-size: 1.2rem;
         position: static;
@@ -218,7 +219,7 @@ li a {
 
 
 .button {
-    color: #E7E7E7;
+    color: #fff5e6;
     text-decoration: none;
     font-size: 16px;
     background-color: transparent;
@@ -230,14 +231,14 @@ li a {
 
 .button a {
     text-decoration: none;
-    color: #E7E7E7;
+    color: #fff5e6;
     padding: 15px 15px;
     cursor: pointer;
 }
 
 .active-button {
     background-color: #ff8000cb;
-    color: #E7E7E7;
+    color: #fff5e6;
 }
 
 .button:hover {
@@ -248,7 +249,7 @@ li a {
 
 .button.active {
     background-color: #ff8000;
-    color: #E7E7E7;
+    color: #fff5e6;
 }
 
 .animated_seismo {
@@ -289,10 +290,19 @@ li a {
 }
 
 
+.about_geomonitor_section {
+    height: 100vh;
+    background-image: url('../img/USGS_kilauea.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 50px;
+}
 
 .about_geomonitor_content {
     display: grid;
-    grid-template-columns: 48% 48%;
+    grid-template-columns: 38% 58%;
     column-gap: 4%;
     padding: 20px;
 }
@@ -333,8 +343,9 @@ li a {
 }
 
 .about_text_card p {
-    color: #E7E7E7;
+    color: #fff5e6;
     line-height: 1.6;
+    font-size: 18px;
 }
 
 /* Earthquakes Section */
@@ -365,7 +376,7 @@ li a {
 }
 
 .earthquake_text_card p {
-    color: #E7E7E7;
+    color: #fff5e6;
     line-height: 1.6;
 }
 
@@ -458,7 +469,7 @@ li a {
 }
 
 .home-column-1 p {
-    color: #E7E7E7;
+    color: #fff5e6;
     line-height: 1.6;
     font-size: 18px;
 }
