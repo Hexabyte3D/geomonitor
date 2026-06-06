@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    <!-- this is the header section with responsive hamburger menu same on all pages -->
     <section class="topbar">
         <input type="checkbox" id="tog_menu" class="menu_hack">
         <header class="header">
@@ -36,126 +37,127 @@
             </div>
         </ul>
     </section>
+    <!-- *********************************************************************************************** -->
 
-    <section class="about_geomonitor_section">
+    <!-- Main Content -->
+    <main class="about_geomonitor_section">
         <div class="about_geomonitor_content">
-            <div class="about-grid-column-1 about_text_card">
-                <h1>About Geomonitor</h1>
-                <p>Geomonitor is a professional software designed to provide real-time monitoring and information about
-                    geological events such as earthquakes and volcanoes. The application aims to offer users an
-                    intuitive interface to access data, visualizations, and predictions related to seismic and volcanic
-                    activities. Geomonitor provides a comprehensive platform for researchers, emergency responders, and
-                    the general public to stay informed about geological events and their potential impacts. It
-                    incorporates advanced machine learning algorithms to analyze and interpret geological data to
-                    generate probabilistic forecasts with confidence intervals.</p>
-                <p>Our mission is to enhance public awareness and understanding of geological phenomena, helping
-                    individuals
-                    stay informed about potential hazards and fostering a greater appreciation for the dynamic nature of
-                    our
-                    planet.</p>
-                <br>
-                <br>
-                <h1>Scientific Approach</h1>
-                <p>Geomonitor employs a rigorous scientific approach to monitor and analyze geological events. Our team
-                    of experts utilizes cutting-edge technology and methodologies to ensure the accuracy and reliability
-                    of the data we provide.</p>
-                <p>Our machine learning models are trained on 2+ years of seismic data and volcanic eruption historical
-                    records to improve prediction accuracy. Models are pre-trained on large datasets to ensure robust
-                    performance while advanced users can fine-tune them for specific applications.</p>
-            </div>
-            <div class="about_geomonitor-content2">
-                <div class="about_text_card">
-                    <h2>Features</h2>
-                    <p>Geomonitor offers a range of features designed to provide users with comprehensive information
-                        and tools for monitoring geological events.</p>
+            <section class="about-grid-column-1">
+                <div class="about-grid-column-1 about_text_card">
+                    <h1>About Geomonitor</h1>
+                    <p>Geomonitor is a professional software designed to provide real-time monitoring and information
+                        about
+                        geological events such as earthquakes and volcanoes. The application aims to offer users an
+                        intuitive interface to access data, visualizations, and predictions related to seismic and
+                        volcanic
+                        activities. Geomonitor provides a comprehensive platform for researchers, emergency responders,
+                        and
+                        the general public to stay informed about geological events and their potential impacts. It
+                        incorporates advanced machine learning algorithms to analyze and interpret geological data to
+                        generate probabilistic forecasts with confidence intervals.</p>
+                    <p>Our mission is to enhance public awareness and understanding of geological phenomena, helping
+                        individuals
+                        stay informed about potential hazards and fostering a greater appreciation for the dynamic
+                        nature of
+                        our
+                        planet.</p>
+                    <br>
+                    <br>
+                    <h1>Scientific Approach</h1>
+                    <p>Geomonitor employs a rigorous scientific approach to monitor and analyze geological events. Our
+                        team
+                        of experts utilizes cutting-edge technology and methodologies to ensure the accuracy and
+                        reliability
+                        of the data we provide.</p>
+                    <p>Our machine learning models are trained on 2+ years of seismic data and volcanic eruption
+                        historical
+                        records to improve prediction accuracy. Models are pre-trained on large datasets to ensure
+                        robust
+                        performance while advanced users can fine-tune them for specific applications.</p>
                 </div>
-            </div>
+            </section>
+            <section class="about-grid-column-2">
+                <div class="about-grid-column-2 about_geomonitor-content2">
+                    <div class="about_text_card">
+                        <h2>Features</h2>
+                        <p>Geomonitor offers a range of features designed to provide users with comprehensive
+                            information
+                            and tools for monitoring geological events.</p>
+                    </div>
+                </div>
 
-            <div class="about_geomonitor_content2 about-grid-column-2">
-                <a href="#mod1" class="modal-link">
-                    <div class="about_gm_left_Colstack about_text_card">
-                        <h3>Real-Time Data</h3>
-                        <br>
+                <!-- about outer column 2  for modal grids-->
+
+                <div class="about_geomonitor_content2 about-grid-column-2">
+                    <!-- left colstack modal grid -->
+                    <section class="about_gm_left_Colstack">
+                        <!--Modal1 real time data ********************************************* -->
                         <a href="#mod1" class="modal-link">
-                            <p>Geomonitor provides real-time data on seismic and volcanic activity, allowing users to
-                                stay informed about geological events as they happen.</p>
-                            <br>
-                            <img src="../img/Geomonitor1.png"
-                                alt="Example of Geomonitor interface showing earthquake data and predictions">
-                    </div>
-                </a>
-                <div id="mod1" class="modal-window">
-                    <div class="modal-content">
-                        <a href="#" title="Close" class="modal-close">Close</a>
-                        <h3>Real-Time Data</h3>
-                        <br>
-                        <img src="../img/Geomonitor1.png"
-                            alt="Example of Geomonitor interface showing earthquake data and predictions">
-                    </div>
+                            <div class="about_text_card">
+                                <h3>Real-Time Data</h3>
+                                <br>
+                                <a href="#mod1" class="modal-link">
+                                    <p>Geomonitor provides real-time data on seismic and volcanic activity, allowing
+                                        users
+                                        to
+                                        stay informed about geological events as they happen.</p>
+                                    <br>
+                                    <img src="../img/Geomonitor1.png"
+                                        alt="Example of Geomonitor interface showing earthquake data and predictions">
+                            </div>
+                        </a>
+                        <!-- Modal -->
+                        <div id="mod1" class="modal-window">
+                            <div class="modal-content">
+                                <a href="#" title="Close" class="modal-close">Close</a>
+                                <h3>Real-Time Data</h3>
+                                <br>
+                                <p>Geomonitor provides real-time data on seismic and volcanic activity, allowing users
+                                    to
+                                    stay informed about geological events as they happen.</p>
+                                <br>
+                                <img src="../img/Geomonitor1.png"
+                                    alt="Example of Geomonitor interface showing earthquake data and predictions">
+                            </div>
+                        </div>
+                        <!-- *********************************************************************************************** -->
+                    </section>
+                    <!-- right colstack modal grid -->
+                    <section class="about_gm_right_Colstack">
+                        <!--Modal2 Database ********************************************* -->
+                        <a href="#mod2" class="modal-link">
+                            <div class="about_gm_right_Colstack about_text_card">
+                                <h3>Database</h3>
+                                <br>
+                                <a href="#mod2" class="modal-link">
+                                    <p>This application is built around a comprehensive internal database of geological
+                                        information.</p>
+                                    <br>
+                                    <img src="../img/Database.png"
+                                        alt="Example of Geomonitor interface showing earthquake data and predictions">
+                            </div>
+                        </a>
+                        <!-- Modal2 -->
+                        <div id="mod2" class="modal-window">
+                            <div class="modal-content">
+                                <a href="#" title="Close" class="modal-close">Close</a>
+                                <h3>Real-Time Data</h3>
+                                <br>
+                                <p>Geomonitor provides real-time data on seismic and volcanic activity, allowing users
+                                    to
+                                    stay informed about geological events as they happen.</p>
+                                <br>
+                                <img src="../img/Geomonitor1.png"
+                                    alt="Example of Geomonitor interface showing earthquake data and predictions">
+                            </div>
+                        </div>
+                        <!-- *********************************************************************************************** -->
+                    </section>
+
                 </div>
-                <div id="mod2" class="about_gm_left_Colstack about_text_card">
-                    <img src="../img/Geomonitor2.png"
-                        alt="Example of Geomonitor interface showing earthquake data and predictions">
-                </div>
-                <div id="mod3" class="about_gm_right_Colstack about_text_card">
-                    <img src="../img/Geomonitor3.png"
-                        alt="Example of Geomonitor interface showing earthquake data and predictions">
-                </div>
-                <div id="mod4" class="about_gm_left_Colstack about_text_card">
-                    <img src="../img/Geomonitor4.png"
-                        alt="Example of Geomonitor interface showing earthquake data and predictions">
-                </div>
-                <div id="mod5" class="about_gm_right_Colstack about_text_card">
-                    <img src="../img/Geomonitor5.png"
-                        alt="Example of Geomonitor interface showing earthquake data and predictions">
-                </div>
-                <div id="mod6" class="about_gm_left_Colstack about_text_card">
-                    <img src="../img/Geomonitor6.png"
-                        alt="Example of Geomonitor interface showing earthquake data and predictions">
-                </div>
-                <div id="mod7" class="about_gm_right_Colstack about_text_card">
-                    <img src="../img/Geomonitor7.png"
-                        alt="Example of Geomonitor interface showing earthquake data and predictions">
-                </div>
-                <div id="mod8" class="about_gm_left_Colstack about_text_card">
-                    <img src="../img/Geomonitor8.jpeg"
-                        alt="Example of Geomonitor interface showing earthquake data and predictions">
-                </div>
-                <div id="mod9" class="about_gm_right_Colstack about_text_card">
-                    <img src="../img/Geomonitor9.png"
-                        alt="Example of Geomonitor interface showing earthquake data and predictions">
-                </div>
-                <div id="mod10" class="about_gm_left_Colstack about_text_card">
-                    <img src="../img/Geomonitor10.png"
-                        alt="Example of Geomonitor interface showing earthquake data and predictions">
-                </div>
-                <div id="mod11" class="about_gm_right_Colstack about_text_card">
-                    <img src="../img/Geomonitor11.png"
-                        alt="Example of Geomonitor interface showing earthquake data and predictions">
-                </div>
-                <div id="mod12" class="about_gm_left_Colstack about_text_card">
-                    <img src="../img/Geomonitor12.png"
-                        alt="Example of Geomonitor interface showing earthquake data and predictions">
-                </div>
-                <div id="mod13" class="about_gm_right_Colstack about_text_card">
-                    <img src="../img/Geomonitor13.png"
-                        alt="Example of Geomonitor interface showing earthquake data and predictions">
-                </div>
-                <div id="mod14" class="about_gm_left_Colstack about_text_card">
-                    <img src="../img/Geomonitor14.png"
-                        alt="Example of Geomonitor interface showing earthquake data and predictions">
-                </div>
-                <div id="mod15" class="about_gm_right_Colstack about_text_card">
-                    <img src="../img/Geomonitor15.png"
-                        alt="Example of Geomonitor interface showing earthquake data and predictions">
-                </div>
-                <div id="mod16" class="about_gm_left_Colstack about_text_card">
-                    <img src="../img/Geomonitor16.png"
-                        alt="Example of Geomonitor interface showing earthquake data and predictions">
-                </div>
-            </div>
         </div>
-    </section>
+        </section>
+    </main>
 </body>
 
 </html>
