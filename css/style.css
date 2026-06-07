@@ -157,7 +157,7 @@ body {
     left: 15px;
     width: calc(100% - 30px);
     margin-right: 15px;
-    opacity: 1;
+    opacity: .95;
 }
 
 .nav_items a {
@@ -249,7 +249,7 @@ li a {
 }
 
 .active-button {
-    background-color: #ff8000cb;
+    background-color: #ff8000;
     color: #fff5e6;
 }
 
@@ -423,6 +423,7 @@ li a {
     grid-column: 2;
     margin-top: 50px;
     padding-right: 5%;
+    padding-top: 80px;
 }
 
 .home-column-1 h1 {
@@ -521,6 +522,11 @@ li a {
         box-shadow: 0 4px 8px rgba(253, 135, 0, 0.5);
     }
 }
+.about_me > img {
+    width: 80%;
+    height: auto;
+}
+
 
 .about-grid-column-1 {
     grid-column: 1;
@@ -596,7 +602,7 @@ li a {
 
     &>div {
         width: 70%;
-        height: auto;
+        height: 100dvh;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -622,7 +628,7 @@ li a {
 
 /* Modal Close button  */
 .modal-close {
-    color: #5b3100;
+    color: #ff8000;
     line-height: 50px;
     font-size: 80%;
     position: absolute;
@@ -636,21 +642,11 @@ li a {
         color: black;
     }
 }
-.modal-close {
-  color: #aaa;
-  line-height: 50px;
-  font-size: 80%;
-  position: absolute;
-  right: 0;
-  text-align: center;
-  top: 0;
-  width: 70px;
-  text-decoration: none;
-  &:hover {
-    color: black;
-  }
-}
+
 a {
     text-decoration: none;
     color: inherit;
+}
+.about-grid-column-2 h2, h3{
+    color: #ff8000;
 }
