@@ -470,6 +470,7 @@ li a {
     margin-top: 20px;
     margin-right: 5%;
     position: relative;
+    Ï
     /* Required for absolute positioning of iframe */
     width: 95%;
     height: 0;
@@ -522,7 +523,8 @@ li a {
         box-shadow: 0 4px 8px rgba(253, 135, 0, 0.5);
     }
 }
-.about_me > img {
+
+.about_me>img {
     width: 80%;
     height: auto;
 }
@@ -620,10 +622,11 @@ li a {
         margin: 0 0 15px;
     }
 }
+
 .modal-window {
-  & > div {
-    border-radius: 1rem;
-  }
+    &>div {
+        border-radius: 1rem;
+    }
 }
 
 /* Modal Close button  */
@@ -647,6 +650,41 @@ a {
     text-decoration: none;
     color: inherit;
 }
-.about-grid-column-2 h2, h3{
+
+.about-grid-column-2 h2,
+h3 {
     color: #ff8000;
+}
+
+.predictions_content>.about_text_card>img {
+    width: 80%;
+
+}
+
+.volcanoes_section {
+    display: grid;
+    width: 100%;
+    height: auto;
+}
+
+.volcanoes_content {
+    justify-content: center;
+    display: grid;
+    width: 80%;
+    height: auto;
+
+}
+
+.volcanos-column-1 {
+    grid-column: 1;
+    width: 100%;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+.volcanos-column-2 {
+    grid-column: 2;
+    width: 100%;
+    padding-right: 5%;
+    padding-left: 5%;
 }
