@@ -67,8 +67,10 @@ body {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
+
     background-size: cover;
     padding-top: 50px;
+    justify-content: center;
 }
 
 .predictions_section {
@@ -336,13 +338,7 @@ li a {
     line-height: 1.6;
 }
 
-.volcanoes_content {
-    display: flex;
-    flex-direction: column;
-    max-width: 100%;
-    min-height: 1280px;
-    padding: 20px;
-}
+
 
 /* Predicitons CSS */
 .predictions_content {
@@ -470,7 +466,6 @@ li a {
     margin-top: 20px;
     margin-right: 5%;
     position: relative;
-    Ï
     /* Required for absolute positioning of iframe */
     width: 95%;
     height: 0;
@@ -481,15 +476,6 @@ li a {
     /* 9 / 16 = 0.5625 */
 }
 
-.video-container iframe {
-    position: absolute;
-    /* Positions iframe relative to the container */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: none;
-}
 
 /* About-Geomonitor grid */
 
@@ -662,22 +648,26 @@ h3 {
 }
 
 .volcanoes_section {
-    display: grid;
+    display: flex;
     width: 100%;
-    height: auto;
+    height: fit-content;
+    justify-content: center;
 }
 
 .volcanoes_content {
     justify-content: center;
+    align-items: center;
     display: grid;
     width: 80%;
-    height: auto;
+    height: 400px;
+
 
 }
 
 .volcanos-column-1 {
     grid-column: 1;
     width: 100%;
+    height: 400px;
     padding-right: 5%;
     padding-left: 5%;
 }
@@ -685,6 +675,46 @@ h3 {
 .volcanos-column-2 {
     grid-column: 2;
     width: 100%;
+    height: 400px;
     padding-right: 5%;
     padding-left: 5%;
+}
+
+.volcano-main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.Volcano-Video {
+    width: 80%;
+    justify-content: center;
+}
+
+.video-container iframe {
+    position: absolute;
+    /* Positions iframe relative to the container */
+    top: 0;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+#beta {
+    display: flex;
+    height: 1280px;
+    width: 100%;
+    margin: 0 0;
+    background-image: url('../img/1280px-Eruzione_Etna_13-01-2011_B.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 50px;
+    padding-bottom: 50px; 
 }
