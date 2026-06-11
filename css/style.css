@@ -311,7 +311,7 @@ li a {
     display: flex;
     flex-direction: column;
     max-width: 100%;
-    min-height: 1280px;
+    min-height: auto;
     padding: 20px;
 }
 
@@ -336,6 +336,16 @@ li a {
 .earthquake_text_card p {
     color: #fff5e6;
     line-height: 1.6;
+}
+
+.earthquake_text_card li a {
+    color: #ffb486;
+    text-decoration: underline;
+
+    &:hover {
+        background-color: rgba(20, 19, 19, 0.9);
+        box-shadow: 0 4px 8px rgba(253, 135, 0, 0.5);
+    }
 }
 
 
@@ -723,6 +733,7 @@ h3 {
     color: #ff8000;
 
 }
+
 .video-banner {
     width: 80%;
     background-color: rgba(20, 19, 19, 0.5);
@@ -742,5 +753,11 @@ h3 {
 .Form_Container {
     display: flex;
     flex-direction: column;
-    width:auto
+    width: auto
+}
+
+.earthquakes_content {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
 }
