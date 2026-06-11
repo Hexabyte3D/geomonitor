@@ -735,4 +735,12 @@ h3 {
         box-shadow: 0 4px 8px rgba(253, 135, 0, 0.5);
     }
 
+
+}
+
+
+.Form_Container {
+    display: flex;
+    flex-direction: column;
+    width:auto
 }
